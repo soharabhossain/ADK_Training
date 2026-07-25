@@ -42,7 +42,7 @@ from google.adk.tools import google_search
 # Define a single-purpose research agent
 researcher = Agent(
     name="researcher_agent",
-    model="gemini-2.5-flash",
+    model="gemini-3.1-flash-lite",
     instructions="You are a helpful research assistant. Use Google Search to verify facts.",
     tools=[google_search]
 )
