@@ -47,9 +47,12 @@ researcher = Agent(
     tools=[google_search]
 )
 
+root_agent = researcher
+
 # Execute query
-response = researcher.run("Summarize the latest developments in AI agent frameworks.")
-print(response.text)
+# Run with `adk web` command on the terminal
+# open the web UI and provide a test prompt, e.g.
+# "Summarize the latest developments in AI agent frameworks."
 ```
 
 
