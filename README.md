@@ -1,14 +1,3 @@
-
-
-"""
-
-with open("README_ADK_brief.md", "w") as f:
-f.write(md_content)
-
-print("FILE_CREATED: README_ADK_brief.md")
-
-
-```text?code_stdout&code_event_index=1
 FILE_CREATED: README_ADK_brief.md
 
 Your Markdown brief for Google's Agent Development Kit (ADK) is ready.
@@ -128,6 +117,3 @@ researcher = Agent(
 # Execute query
 response = researcher.run("Summarize the latest developments in AI agent frameworks.")
 print(response.text)
-```
-README_ADK_brief.md
-Displaying README_ADK_brief.md.
