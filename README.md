@@ -1,2 +1,179 @@
 # ADK_Training
-Agentic AI Capacity Building Workshop August-September, 2026
+
+Gemini
+New chat
+Search chats
+Images
+Library
+New notebook
+AI and Future Technologies in Engineering and Design
+Benchmarking Human Preference with LLM-as-a-Judge
+All notebooks
+ADK Framework Overview for GitHub
+Understanding ADK Event Processing
+ADK Agent File Naming Conventions
+EPF India: RoI, Calculation, Tax
+Setting Default LLM Models in ADK
+Configure Agent Model Via Environment Variables
+Building ReAct Agent with Google ADK
+Fix GCP Billing Account Deployment Error
+Ngrok Tunnel Already Online Error
+ADK Cybersecurity Agent Project Ideas
+AI Stock Prediction Data Preprocessing
+Python TimescaleDB Data Ingestion
+Zerodha Kite Connect Premarket Data
+Facial Image Alternatives by Use Case
+Code and Server Configuration for RTMIP
+Zerodha Instrument Token Validation
+Saving CSV to TimeScale DB using Docker
+Analyzing NSE Reliance Stock Data
+Fixing CSV Copy with JSON Data
+Nifty OI and Global Cues
+Debugging ADK Code with Non-Breaking Spaces
+FastAPI Zerodha Live Ticker Integration
+ADK Custom Agent Code Fix
+Authentic Stock Market Data APIs
+Running ADK Notebook on Colab
+Streamlining Agent Interaction Function
+ADK Agent Code Fixes
+ADK Weather App OpenTelemetry Errors
+GCP Lab Setup for Agentic AI Training
+ADK Agent Deployment on Vertex AI
+Setting Up Agentic AI Training Labs
+TLDR: Meaning and Usage
+গাড়ি নিয়ে শুধু নামিয়ে দেওয়া
+Engineering Future in AI Era
+Conversation with Gemini
+Write a small brief about Google's ADK framework with features and usability, etc in a table in a.md form. I will use it for my Github readme.md file.
+
+"""
+
+with open("README_ADK_brief.md", "w") as f:
+f.write(md_content)
+
+print("FILE_CREATED: README_ADK_brief.md")
+
+
+```text?code_stdout&code_event_index=1
+FILE_CREATED: README_ADK_brief.md
+
+Your Markdown brief for Google's Agent Development Kit (ADK) is ready.
+MD icon
+README_ADK_brief
+ MD 
+Open
+
+Markdown Content Preview (ready to paste into your README.md):
+Markdown
+# Google Agent Development Kit (ADK) Overview
+
+The **Agent Development Kit (ADK)** is Google's open-source framework designed to build, test, evaluate, and deploy production-ready AI agents and multi-agent systems at scale. Unlike simple prompt-engineering wrappers, ADK brings traditional software engineering principles—such as modularity, unit testing, telemetry, and structured orchestration—to agentic AI development.
+
+---
+
+## Key Overview & Features
+
+| Attribute | Details |
+| :--- | :--- |
+| **Framework Name** | Google Agent Development Kit (ADK) |
+| **Primary Goal** | Streamline full-stack development of single and multi-agent AI systems from prototype to enterprise deployment. |
+| **Multi-Language Support** | Available in **Python**, **TypeScript**, **Go**, **Java**, and **Kotlin**. |
+| **Model Ecosystem** | Deeply integrated with **Google Gemini** and **Vertex AI**, while supporting third-party models via **LiteLLM**. |
+| **Multi-Agent Orchestration** | Native support for sequential, parallel, loop workflows, as well as dynamic LLM-driven agent routing and delegation. |
+| **Multimodal Capabilities** | Features built-in bidirectional audio and video streaming for natural real-time human-agent interactions. |
+| **Tool-as-Agent Abstraction** | Enables developers to encapsulate APIs, external tools, or other agents as callable tools, promoting modular reuse. |
+| **Evaluation & Testing** | Includes a built-in evaluation harness (`AgentEvaluator`) for scenario-driven testing, tracking execution trajectories, and benchmarking performance. |
+| **Deployment Options** | Flexible deployment: local developer CLI/UI, Docker containers, Cloud Run, GKE, or fully managed enterprise runtime on Vertex AI. |
+
+---
+
+## Key Feature Breakdown vs. Usability / Use Cases
+
+| Core Component / Feature | Capabilities | Typical Usability & Use Cases |
+| :--- | :--- | :--- |
+| **Single-Purpose Agents** | Lightweight, focused agents designed for execution of dedicated task primitives. | Calendar fetching, currency conversion, document summarization, or single API interactions. |
+| **Hierarchical Multi-Agent Systems** | Orchestration patterns where a parent/router agent delegates tasks to specialized sub-agents. | Complex customer support automation, enterprise knowledge synthesis, and multi-step research. |
+| **Flexible Orchestrators** | Deterministic pipeline controls (`Sequential`, `Parallel`, `Loop`) mixed with dynamic LLM routing. | Order processing pipelines, data transformation workflows, and automated triage systems. |
+| **Tooling & Connectivity Ecosystem** | Pre-built and custom adapters connecting agents to databases, web search, enterprise tools, and APIs. | Connecting AI agents directly to CRM databases, enterprise file stores, and cloud infrastructure. |
+| **Local Dev & Debugger UI** | Interactive local developer CLI and web workbench for rapid scaffolding, state inspection, and step-by-step debugging. | Fast prototyping, inspecting intermediate agent reasoning steps, and local session testing. |
+| **Built-in Telemetry & Evaluation** | Native logging, tracing, metrics tracking, and automated evaluation against benchmark test datasets. | Regression testing before release, monitoring token usage, and evaluating agent trajectory correctness. |
+
+---
+
+## Quick Example (Python)
+
+```python
+from google.adk import Agent
+from google.adk.tools import google_search
+
+# Define a single-purpose research agent
+researcher = Agent(
+    name="researcher_agent",
+    model="gemini-2.5-flash",
+    instructions="You are a helpful research assistant. Use Google Search to verify facts.",
+    tools=[google_search]
+)
+
+# Execute query
+response = researcher.run("Summarize the latest developments in AI agent frameworks.")
+print(response.text)
+
+
+
+Gemini is AI and can make mistakes.
+
+# Google Agent Development Kit (ADK) Overview
+
+The **Agent Development Kit (ADK)** is Google's open-source framework designed to build, test, evaluate, and deploy production-ready AI agents and multi-agent systems at scale. Unlike simple prompt-engineering wrappers, ADK brings traditional software engineering principles—such as modularity, unit testing, telemetry, and structured orchestration—to agentic AI development.
+
+---
+
+## Key Overview & Features
+
+| Attribute | Details |
+| :--- | :--- |
+| **Framework Name** | Google Agent Development Kit (ADK) |
+| **Primary Goal** | Streamline full-stack development of single and multi-agent AI systems from prototype to enterprise deployment. |
+| **Multi-Language Support** | Available in **Python**, **TypeScript**, **Go**, **Java**, and **Kotlin**. |
+| **Model Ecosystem** | Deeply integrated with **Google Gemini** and **Vertex AI**, while supporting third-party models via **LiteLLM**. |
+| **Multi-Agent Orchestration** | Native support for sequential, parallel, loop workflows, as well as dynamic LLM-driven agent routing and delegation. |
+| **Multimodal Capabilities** | Features built-in bidirectional audio and video streaming for natural real-time human-agent interactions. |
+| **Tool-as-Agent Abstraction** | Enables developers to encapsulate APIs, external tools, or other agents as callable tools, promoting modular reuse. |
+| **Evaluation & Testing** | Includes a built-in evaluation harness (`AgentEvaluator`) for scenario-driven testing, tracking execution trajectories, and benchmarking performance. |
+| **Deployment Options** | Flexible deployment: local developer CLI/UI, Docker containers, Cloud Run, GKE, or fully managed enterprise runtime on Vertex AI. |
+
+---
+
+## Key Feature Breakdown vs. Usability / Use Cases
+
+| Core Component / Feature | Capabilities | Typical Usability & Use Cases |
+| :--- | :--- | :--- |
+| **Single-Purpose Agents** | Lightweight, focused agents designed for execution of dedicated task primitives. | Calendar fetching, currency conversion, document summarization, or single API interactions. |
+| **Hierarchical Multi-Agent Systems** | Orchestration patterns where a parent/router agent delegates tasks to specialized sub-agents. | Complex customer support automation, enterprise knowledge synthesis, and multi-step research. |
+| **Flexible Orchestrators** | Deterministic pipeline controls (`Sequential`, `Parallel`, `Loop`) mixed with dynamic LLM routing. | Order processing pipelines, data transformation workflows, and automated triage systems. |
+| **Tooling & Connectivity Ecosystem** | Pre-built and custom adapters connecting agents to databases, web search, enterprise tools, and APIs. | Connecting AI agents directly to CRM databases, enterprise file stores, and cloud infrastructure. |
+| **Local Dev & Debugger UI** | Interactive local developer CLI and web workbench for rapid scaffolding, state inspection, and step-by-step debugging. | Fast prototyping, inspecting intermediate agent reasoning steps, and local session testing. |
+| **Built-in Telemetry & Evaluation** | Native logging, tracing, metrics tracking, and automated evaluation against benchmark test datasets. | Regression testing before release, monitoring token usage, and evaluating agent trajectory correctness. |
+
+---
+
+## Quick Example (Python)
+
+```python
+from google.adk import Agent
+from google.adk.tools import google_search
+
+# Define a single-purpose research agent
+researcher = Agent(
+    name="researcher_agent",
+    model="gemini-2.5-flash",
+    instructions="You are a helpful research assistant. Use Google Search to verify facts.",
+    tools=[google_search]
+)
+
+# Execute query
+response = researcher.run("Summarize the latest developments in AI agent frameworks.")
+print(response.text)
+```
+README_ADK_brief.md
+Displaying README_ADK_brief.md.
